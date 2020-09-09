@@ -7,3 +7,8 @@ A visualização de dados possui grande relevância nos meios informativos, dent
 Partindo do pressuposto de que a maioria das pessoas interessadas nesse conteúdo possui conhecimentos básicos sobre a linguagem JavaScript, iniciaremos este curso falando um pouco sobre SVG, que é o elemento HTML mais manipulado pelo D3, em seguida partiremos para o conteúdo de D3 propriamente dito.
 
 SVG é uma linguagem XML e pode ser um tipo de elemento HTML, assim como body, p, table e tantos outros conhecidos por todo desenvolvedor web. Para usá-lo devemos abrir nosso documento HTML e inserir a tag <svg> dessa forma:
+  
+```
+<svg width="100" height="100">
+</svg> 
+```
