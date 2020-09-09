@@ -8,7 +8,21 @@ Partindo do pressuposto de que a maioria das pessoas interessadas nesse conteúd
 
 SVG é uma linguagem XML e pode ser um tipo de elemento HTML, assim como body, p, table e tantos outros conhecidos por todo desenvolvedor web. Para usá-lo devemos abrir nosso documento HTML e inserir a tag <svg> dessa forma:
   
-```
+```xml
 <svg width="100" height="100">
 </svg> 
 ```
+Neste exemplos definimos nosso SVG com o tamanho de 100 de largura e 100 de altura. Porém a unidade de medida, neste caso, não foi informada. 
+SVG, Scalable Vector Graphics ou seja Gráficos Vetoriais Escaláveis, trazem uma proposta fantástica para o desenvolvimento de páginas responsivas pois suas dimensões são dinamicamente ajustadas ao tamanho do ecrã disponível, parecido com o a unidade ‘%’ de medida de CSS.
+
+Os elementos filhos do SVG que abordaremos aqui são:
+
+* Rectangle <rect>
+* Circle <circle>
+* Ellipse <ellipse>
+* Line <line>
+* Polyline <polyline>
+* Polygon <polygon>
+* Path <path>
+  
+Estes 7 elementos são os mais usamos ao construir representações gráficas com D3.
