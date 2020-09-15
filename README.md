@@ -59,3 +59,21 @@ Vamos verificar outras propriedades:
 </svg>
 ```
 ![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/circle01.PNG)
+
+* O grid tem 100 de largura(width) e 100 de altura(heigth).
+* O child para criar um círculo é ‘circle’.
+* cx e cy definem o ângulo do ponto central dentro do grid ou seja nesse exemplo o ângulo x e y ficam exatamente no centro do canvas.
+* r representa o raio do círculo definido.
+* stroke é a cor da borda. Neste caso, será preta.
+* strole-width é a largura da borda.
+* fill é a cor do preenchimento do círculo.
+
+Abaixo temos uma elipse criada com SVG:
+
+```xml
+<svg height="140" width="500">
+  <ellipse cx="200" cy="80" rx="100" ry="50"
+  style="fill:yellow;stroke:purple;stroke-width:2" />
+</svg>
+```
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/elipse.PNG)
