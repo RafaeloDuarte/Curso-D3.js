@@ -36,6 +36,8 @@ style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)"/>
 </svg>
 ```
 
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/rect01.PNG)
+
 Seu resultado é:
 
 * Os atributos height e width correspondem à altura da figura e largura respectivamente.
@@ -51,8 +53,9 @@ Vamos verificar outras propriedades:
   <rect 
         x="50" 
         y="20" 
-        width="150" 
-        height="150" 
+        width="50" 
+        height="50" 
         style="fill:purple;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
 </svg>
 ```
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/circle01.PNG)
