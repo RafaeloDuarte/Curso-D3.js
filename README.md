@@ -27,6 +27,8 @@ Os elementos filhos do SVG que abordaremos aqui são:
   
 Estes 7 elementos são os mais usamos ao construir representações gráficas com D3.
 
+### Rect
+
 Abaixo temos um retângulo criado com SVG:
 
 ```xml
@@ -68,6 +70,8 @@ Vamos verificar outras propriedades:
 * strole-width é a largura da borda.
 * fill é a cor do preenchimento do círculo.
 
+### Elipse
+
 Abaixo temos uma elipse criada com SVG:
 
 ```xml
@@ -91,3 +95,21 @@ Outro exemplo:
 </svg>
 ```
 ![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/elipse02.PNG)
+
+### Line
+
+
+
+``` xml
+<svg height="210" width="500">
+  <line x1="0" y1="0" x2="200" y2="200" style="stroke:darkblue;stroke-width:2" />
+</svg>
+```
+
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/linha01.PNG)
+
+* x1 define o ponto horizontal inicial da linha.
+* y1 define o ponto vertical inicial da linha.
+* x2 define o ponto vertical final da linha.
+* y2, adivinhe...
+* dentro de style temos stroke(cor da linha) e stroke-width(espessura da linha).
