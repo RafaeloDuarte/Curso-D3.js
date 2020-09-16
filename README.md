@@ -77,3 +77,17 @@ Abaixo temos uma elipse criada com SVG:
 </svg>
 ```
 ![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/elipse.PNG)
+
+* Assim como no exemplo do circle temos os atributos cx e cy para alinhar o centro do círculo.
+* Neste caso, por se tratar de uma elipse temos dois raios um horizontal e um vertical rx e ry respectivamente.
+* No exemplo temos as propriedades de preenchimento e bordeamento da elipse descritos em style como um CSS. Ou seja, já que se comportam como se fizermos uma classe com essas propriedades em um arquivo CSS e importarmos no SVG.
+
+Outro exemplo:
+
+``` xml
+<svg height="100" width="500">
+  <ellipse cx="240" cy="50" rx="220" ry="30" style="fill:yellow" />
+  <ellipse cx="220" cy="50" rx="190" ry="20" style="fill:white" />
+</svg>
+```
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/elipse02.PNG)
