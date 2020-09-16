@@ -112,9 +112,9 @@ Outro exemplo:
 * y2, adivinhe...
 * dentro de style temos stroke(cor da linha) e stroke-width(espessura da linha).
 
-### Polyline
+### Polygon
 
-Polilinhas são um pouco complexas de serem manipiladas em SVGs.
+Poligonos são um pouco complexos de serem manipilados em SVGs.
 
 ``` xml
 <svg height="210" width="500">
@@ -124,7 +124,7 @@ Polilinhas são um pouco complexas de serem manipiladas em SVGs.
 
 ![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/polyline01.PNG)
 
-* poits é o elemento mais importante de polyline.
+* poits é o elemento mais importante de polygon.
 * points são eixos e suas coordenadas funcionam semelhantemente à lines mas podem ser multiplas por isso são separadas por espaços.
 * como nos exemplos anteriores, o primeiro eixo será x(horizontal) e o segundo será y(vertical) e definem o ponto inicial de uma linha.
 * o próximo seguinte terá seus dois eixos definidos da mesma forma do que o ponto anterior.
@@ -140,3 +140,16 @@ Outro exemplo:
 ```
 
 ![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/polyline02.PNG)
+
+### Polyline
+
+Polilinha funciona como um polígono porém sem preenchimento.
+
+``` xml
+<svg height="200" width="500">
+  <polyline points="20,20 40,25 60,40 80,120 120,140 200,180 250,100 270,97" 
+            style="fill:none;stroke:black;stroke-width:3" />
+</svg>
+```
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/polilinha01.PNG)
+
