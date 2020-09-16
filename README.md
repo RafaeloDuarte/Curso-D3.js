@@ -98,8 +98,6 @@ Outro exemplo:
 
 ### Line
 
-
-
 ``` xml
 <svg height="210" width="500">
   <line x1="0" y1="0" x2="200" y2="200" style="stroke:darkblue;stroke-width:2" />
@@ -113,3 +111,32 @@ Outro exemplo:
 * x2 define o ponto vertical final da linha.
 * y2, adivinhe...
 * dentro de style temos stroke(cor da linha) e stroke-width(espessura da linha).
+
+### Polyline
+
+Polilinhas são um pouco complexas de serem manipiladas em SVGs.
+
+``` xml
+<svg height="210" width="500">
+  <polygon points="10,10 150,50 100,170" style="fill:#00ad43;stroke:#52ff95;stroke-width:5" />
+</svg>
+```
+
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/polyline01.PNG)
+
+* poits é o elemento mais importante de polyline.
+* points são eixos e suas coordenadas funcionam semelhantemente à lines mas podem ser multiplas por isso são separadas por espaços.
+* como nos exemplos anteriores, o primeiro eixo será x(horizontal) e o segundo será y(vertical) e definem o ponto inicial de uma linha.
+* o próximo seguinte terá seus dois eixos definidos da mesma forma do que o ponto anterior.
+* para que haja preenchimento e formação de um triângulo é necessário haver um novo ponto com seu eixos x e y. Sendo assim, 3 pontos sendo ligados por linha reta formam um triângulo.
+
+Outro exemplo:
+
+``` xml
+<svg height="210" width="500">
+  <polygon points="10,10 100,150 150,10 200,150 250,10 300,150 350,10 400,150" 
+           style="fill:#00ad43;stroke:#52ff95;stroke-width:5" />
+</svg>
+```
+
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/polyline02.PNG)
