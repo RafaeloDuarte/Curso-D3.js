@@ -153,3 +153,12 @@ Polilinha funciona como um polígono porém sem preenchimento.
 ```
 ![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/polilinha01.PNG)
 
+Mais um exemplo de polilinha:
+
+``` xml
+<svg height="180" width="500">
+  <polyline points="5,150 5,100 50,100 50,50 100,50 100,0" 
+            style="fill:white;stroke:#ec2131;stroke-width:5" />
+</svg>
+```
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/polilinha02.PNG)
