@@ -178,3 +178,10 @@ Path não é só o elemento de uso mais complexo de SVG como também é o mais c
 * A = elliptical Arc
 * Z = closepath
 
+Vamos dar uma olhada num code pra assustar:
+
+```xml
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M150 0 L75 200 L225 200 Z" />
+</svg>
+```
