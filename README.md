@@ -162,3 +162,19 @@ Mais um exemplo de polilinha:
 </svg>
 ```
 ![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/polilinha02.PNG)
+
+## O TEMÍVEL PATH
+
+Path não é só o elemento de uso mais complexo de SVG como também é o mais customizavel. Com ele podemos criar linhas, curva, arcos o que já nos permite fazer muita coisa. O atributo que define as formas de um elemento path é 'd'. Os atributos que compoem 'd' são:
+
+* M = moveto
+* L = lineto
+* H = horizontal lineto
+* V = vertical lineto
+* C = curveto
+* S = smooth curveto
+* Q = quadratic Bézier curve
+* T = smooth quadratic Bézier curveto
+* A = elliptical Arc
+* Z = closepath
+
