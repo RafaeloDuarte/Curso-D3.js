@@ -165,7 +165,7 @@ Mais um exemplo de polilinha:
 
 ## O TEMÍVEL PATH
 
-Path não é só o elemento de uso mais complexo de SVG como também é o mais customizavel. Com ele podemos criar linhas, curva, arcos o que já nos permite fazer muita coisa. O atributo que define as formas de um elemento path é 'd'. Os atributos que compoem 'd' são:
+Path não é só o elemento de uso mais complexo de SVG como também é o mais customizável. Com ele podemos criar linhas, curva, arcos o que já nos permite fazer muita coisa. O atributo que define as formas de um elemento path é 'd'. Os atributos que compõem 'd' são:
 
 * M = moveto
 * L = lineto
@@ -185,3 +185,18 @@ Vamos dar uma olhada num code pra assustar:
   <path d="M150 0 L75 200 L225 200 Z" />
 </svg>
 ```
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/path01.PNG)
+
+Formas complexas podem ser feitas com o elemento polyline porém seu uso para tal exigiria muitas pequenas polilinhas além disso não escalaria tão bem.
+O uso de editores de SVG para criação dinâmica de paths complexos é muito comum porém para corrigir erros em modelos SVG é importante ter um bom entendimento de path.
+
+Cada um dos comandos é instanciado em 'd' pelo nome de sua classe e sua localização com as coordenadas xey, por exemplo M10 10, criará um elemento M nas posições x=10 e y=10.
+O comando M significa Move To. Após instanciá-lo dessa forma M10 10 o parser aguarda pelo próximo comando.
+
+Todos os comandos possuem duas variantes, um instanciado com a letra maiúscula(M) e outro com letra minúscula(m) sendo que a maiúscula especifica valores de coordenadas absolutas na página enquanto que minúscula específica coordenadas relativas(por exemplo, mover 10 px para cima e 7 para a esquerda do último ponto).
+As coordenadas são sempre escritas sem unidade de medida.
+
+Ao total são 5 os comandos de path para gerar linhas. O primeiro é o M(Move To) que recebe os parâmetros x e y. O preenchimento de apenas um M não renderiza nenhuma linha mas será ponto de partida para os próximos comandos que virão.
+
+
+
