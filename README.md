@@ -198,5 +198,55 @@ As coordenadas são sempre escritas sem unidade de medida.
 
 Ao total são 5 os comandos de path para gerar linhas. O primeiro é o M(Move To) que recebe os parâmetros x e y. O preenchimento de apenas um M não renderiza nenhuma linha mas será ponto de partida para os próximos comandos que virão.
 
+No exemplo a seguir foram inseridas as coordenadas xey(10 10) mas para que possamos ter uma ideia de onde estão os pontos colocaremos um pequeno ponto com circle em cada coordenada definida.
 
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/path02.PNG)
 
+Existem 3 comandos para desenhar linhas. O mais genérico é L(Line To) que possuem duas coordenadas xey e desenha uma linha da posição atual para a coordenada inserida. Neste caso definirá o ponto de encerramento da figura.
+
+```xml
+    <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10 L10 10" />
+        <circle cx="10" cy="10" r="2" fill="red"></circle>
+    </svg>
+```
+
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/path02.PNG)
+
+Agora colocaremos os parâmetros H e V. H para linha horizontal e V para linha vertical.
+
+```xml
+    <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 10 10 H 90 V 90 H 10 L10 10" />
+
+        <circle cx="10" cy="10" r="2" fill="red"></circle>
+        <circle cx="90" cy="10" r="2" fill="red"></circle>
+        <circle cx="90" cy="90" r="2" fill="red"></circle>
+        <circle cx="10" cy="90" r="2" fill="red"></circle>
+
+    </svg>
+```
+
+![Test Image 2](https://github.com/RafaeloDuarte/Curso-D3.js/blob/master/assets/path03.PNG)
+
+O comando Z sinaliza o fechamento da instrução.
+
+```xml
+    <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 10 10 H 90 V 90 H 10 L10 10 Z" />
+
+        <circle cx="10" cy="10" r="2" fill="red"></circle>
+        <circle cx="90" cy="10" r="2" fill="red"></circle>
+        <circle cx="90" cy="90" r="2" fill="red"></circle>
+        <circle cx="10" cy="90" r="2" fill="red"></circle>
+
+    </svg>
+```
+
+Podemos abreviar o código dessa forma:
+
+```xml
+    <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 10 10 H 90 V 90 H 10 L10 10 Z" fill="transparent" stroke="black" />
+    </svg>
+```
